@@ -4,8 +4,9 @@ if ('serviceWorker' in navigator) {
         console.log(':^)', reg);
         reg.pushManager.subscribe({
             userVisibleOnly: true
-        }).then(function(sub) {
-            console.log('endpoint:', sub.endpoint);
+        }).then(function(subscription) {
+            console.log('subscription:', subscription.toJSON());
+            console.log('endpoint:', subscription.endpoint);
         });
     }).catch(function(error) {
         console.log(':^(', error);

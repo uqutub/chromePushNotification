@@ -19,7 +19,9 @@
   "author": "Yousuf Qutubuddin",
   "license": "ISC",
   "dependencies": {
+    "crypto": "0.0.3",
     "express": "^4.13.4",
-    "gcm": "^1.0.1"
+    "gcm": "^1.0.1",
+    "web-push-encryption": "^2.0.0"
   }
 }
